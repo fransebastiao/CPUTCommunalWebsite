@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CPUT Community Exchange</title>
+  <title>CPUT Student Community</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,7 +43,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>CPUT Community Exchange</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>CPUT Student Community</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -53,7 +53,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Marketplace</a></li>
-          <li><a class="active " href="portfolio.html">Accomodation</a></li>
+          <li><a href="portfolio.html">Accomodation</a></li>
           <li><a href="team.html">Emergency</a></li>
           <li><a href="blog.html">Student Support</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -66,97 +66,28 @@
 
   <main id="main">
 
-    <!-- =======  Accommodation Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-        <div class="insideContainer">
-          <img src="assets/img/portfolio/accommodation3.jpg" alt="Accomodation Preview">
-          <div class="centered">
-            <h2>Student Accommodation</h2>
-            <h3>Find and book your accomodation</h3>
-         
-            <div class="overlayContainer">
-              <form autocomplete="off" class="searchForm">
-                <div class="searchBox">
-                    <input type="text" name="text" placeholder="Where o you want to live?" 
-                    autocomplete="chrome-off" id="token-input-AutoCompleteItems" spellcheck="false" 
-                    value="" style="outline: none;" size="70";>
-                </div>
-              </form>
-            </div>
-
-            <button class="searchBtn"><span>Search</span></button>
-
-            <div class="filters">
-              <div class="filter-row">
-                <ul>
-                  <li><label for="province">Province</label></li>
-                  <li><label for="property-type">Property Type</label></li>
-                  <li><label for="min-price">Min Price</label></li>
-                  <li><label for="max-price">Max price</label></li>
-                  <li><label for="bedrooms">Bedrooms</label></li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Any</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-                <button onclick="myFunction()" class="dropbtn2">Any</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-                <button onclick="myFunction()" class="dropbtn3">Any</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-                <button onclick="myFunction()" class="dropbtn4">Any</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-                <button onclick="myFunction()" class="dropbtn5">Any</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
-            </div>
-          </div>       
-        </div>  
+    <!-- =======  List Properties Section ======= -->
+    <section class="listProperties">
+      <div class="properties-container">
+        <div class="btnsArea">
+            <button class="listPropertyBtn">List your properties</button>
+            <button class="viewBookingsBtn">View Bookings</button>
+            <button class="editPropertyBtn">Edit properties</button>
+        </div>
       </div>      
-    </section><!-- End of Accommodation Section -->
+    </section><!-- End of List Properties Buttons Section -->
 
     <!-- ======= Text Section ======= -->
-    <section class="portfolio">
-      <div class="container">
-        <div class="textSection">
-          <h1>We Ensure Safety</h1>
-          <p>Keep your contact info private by chatting to possible landlords or<br>
-             roommtes through our website.</p>
-          <h1>Verify Properties</h1>
-          <p>We verify properties for you to identify them online.<br>
-           To provide an easy online rental experience for you to spend time on what really matters.</p>
+    <section class="main-section">
+      <div class="publish-container">
+        <div class="publishTxt">
+            <h1>Publish your property</h1>
+            <p>This is an easy process ...</p>
         </div>
-        <div class="imageArea">
-          <img src="assets/img/portfolio/verifyProperties.jpg" alt="Verify Properties">
-        </div>
-        <div class="landlord">
-          <h1>Do you wish to list a property?</h1>
-          <p>Publish your properties and find tenants and rommates.</p>
-        </div>
-        <div class="publishProperty">
-          <button class="publishBtn" onclick="window.location.href = 'list-properties.html';">
-            <a class="active " href="list-properties.html">Publish property</a>
-          </button>
+        <div class="btnArea">
+            <a href="list-property-form.html"><img src="assets/img/portfolio/key.png" alt="Key"></a>
+            <a class="txt" href="list-property-form.html">Start Listing</a>
+            <p>For better reviews, we advise you to leave out super basic info, use great images and describe the properties accurately</p>
         </div>
       </div>
     </section><!-- End Text Section -->

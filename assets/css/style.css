@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
+  width: 100%;
 }
 
 a {
@@ -515,40 +516,26 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background-color: #f3f8fa;
+  background-color: whitesmoke;
   min-height: 40px;
+  width:100%;
 }
-.breadcrumbs h2 {
+
+.breadcrumbs .container .insideContainer .centered h3 {
   font-size: 28px;
   font-weight: 300;
   font-style: bold;
 }
-.breadcrumbs ol {
+
+.breadcrumbs .container .insideContainer img{
+  width: 100%;
+  height: 450px;
+}
+
+.centered{
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
+  width: auto;
 }
 
 .centered h2{
@@ -584,59 +571,61 @@ section {
   left: 0;
   margin: 10px;
   position: absolute;
-  left: 0;
   vertical-align: middle;
   border: 0;
 }
 
 .searchBox {
-  width: 695px;
-  display: inline-block;
+  display: flex;
+  width: 100%;
   border-right: 0;
   border-radius: 25px;
   padding-left: 0;
   background-color: white;
 }
 
-input[type="text"] {
+.overlayContainer .searchForm {
+  margin-top: 0px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+}
+.overlayContainer .searchForm  input[type=text] {
   height: auto;
-  padding: 8px 15px;
+  padding: 2px;
+  width: calc(100% - 100px);
   color: #9ea5b1;
   border: 0px solid white;
-  -webkit-box-shadow: inset 0 1px 0 0 #9ea5b1;
-  box-shadow: inset 0 1px 0 0 #9ea5b1;
-  border-radius: 30px;
+
 }
 
 .centered .searchBtn {
-  color: white;
-  border-radius: 30px;
-  position: absolute;
-  top: 60%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.centered button {
-  font-size: 18px;
+  position: relative;
+  top: -172px;
+  right: -870px;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #68A4C4;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
   width: 100px;
   height: 40px;
-  border: none;
   cursor: pointer;
-  
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px){
+  .searchBtn{
+    display: block;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
   }
+}
 
-button{text-decoration: none;
-  background-color: #5b9996;
-  background-color: black;
-  background:
-  linear-gradient(to left, #5b9996 0%, black 100%), 
-  linear-gradient(to right, #5b9996 100%, black 0%);
-  background-blend-mode: difference, darken;
-} 
-
-button:hover{opacity: 90%;}
+.searchBtn:hover{background-color: #2B547E;}
 
 label {
   cursor: default;
@@ -659,8 +648,382 @@ label {
   padding: 25px;
   position: relative;
   top: 130px;
-  right: 130px;
+  right: 100px;
 }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 100px;
+  opacity: 90%;
+}
+
+.dropbtn2 {
+  background-color: #3498DB;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 100px;
+  border-radius: 100px;
+  opacity: 90%;
+}
+
+.dropbtn3 {
+  background-color: #3498DB;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 100px;
+  border-radius: 100px;
+  opacity: 90%;
+}
+
+.dropbtn4 {
+  background-color: #3498DB;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 100px;
+  border-radius: 100px;
+  opacity: 90%;
+}
+
+.dropbtn5 {
+  background-color: #3498DB;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 100px;
+  border-radius: 100px;
+  opacity: 90%;
+}
+
+.dropbtn6 {
+  background-color: #3498DB;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 30px;
+  width: 100px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropbtn2:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropbtn3:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropbtn4:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropbtn5:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropbtn6:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  right: 12%;
+  top: 120px;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.portfolio .container .textSection{
+  padding: 30px;
+  background-color: #f3f8fa;
+  border-radius: 30px;
+  height: 350px;
+  width: 600px;
+  box-shadow: 1px solid #111;
+}
+
+.portfolio .container .imageArea {
+  position:relative;
+  top: -370px;
+  right:-10px;
+  float:right;
+}
+
+.portfolio .container .imageArea img {
+  height: 400px;
+  width:420px;
+}
+
+.portfolio .container .landlord{
+  margin-top: 40px;
+}
+
+.portfolio .publishProperty {
+  position:absolute;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.publishProperty .publishBtn {
+  font-size: 18px;
+  padding: 0 20px;
+  margin: 3px;
+  background: #68A4C4;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 200px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.publishProperty .publishBtn a{
+  color: #fff;
+}
+
+.publishBtn:hover{background-color: #2B547E;}
+
+/*--------------------------------------------------------------
+# List Properties
+--------------------------------------------------------------*/
+.listProperties .properties-container {
+  background: #424242;
+  float: left;
+  width:25%;
+  height: 100%;
+  margin: 0;
+  border-radius: 30px;
+  position: absolute;
+  top:50px;
+}
+
+.listProperties .properties-container .btnsArea{
+  padding: 55px;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.listProperties .properties-container .btnsArea .listPropertyBtn{
+  font-size: 18px;
+  padding: 0 20px;
+  margin-left: 105px;
+  background: #bdbdbd;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 250px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.listPropertyBtn:hover{opacity: 80%}
+
+.listProperties .properties-container .btnsArea .viewBookingsBtn{
+  font-size: 18px;
+  padding: 0 20px;
+  margin-left: 105px;
+  margin-top: 30px;
+  background: #bdbdbd;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 250px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.viewBookingsBtn:hover{opacity: 80%}
+
+.listProperties .properties-container .btnsArea .editPropertyBtn{
+  font-size: 18px;
+  padding: 0 20px;
+  margin-top: 30px;
+  margin-left: 105px;
+  background: #bdbdbd;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 250px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.editPropertyBtn:hover{opacity: 80%}
+
+.main-section .publish-container .publishTxt {
+  float: right;
+  position: relative;
+  color: black;
+  margin-right: 400px;
+}
+
+.main-section .publish-container .btnArea{
+  position: relative;
+  top:100px;
+  left:570px;
+  background-color: whitesmoke;
+  height:100px;
+  width: 700px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+
+.main-section .publish-container .btnArea img{
+  height:80px;
+  width: 80px;
+  border: 1px solid #03a9f4;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.main-section .publish-container .btnArea .txt{
+  font-size: 22px;
+  color: #03a9f4;
+  position: relative;
+  top:-20px;
+  margin-left: 10px;
+}
+
+.main-section .publish-container .btnArea p{
+  font-size: 14px;
+  color: black;
+  position: relative;
+  top:-45px;
+  margin-left: 95px;
+}
+
+.main-section .publish-container .btnArea:hover{
+  background: #dfdcdc;
+}
+
+
+/*--------------------------------------------------------------
+# List new property
+--------------------------------------------------------------*/
+.newProperties .list-new-property h5 {
+  text-align: center;
+}
+
+.newProperties .list-new-property h6 {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.newProperties .list-new-property .list-property-form {
+  width: 60%;
+  margin: auto;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.newProperties .list-new-property .list-property-form .row-3-left {
+  width:50%;
+  float: left;
+}
+
+.newProperties .list-new-property .list-property-form .province {
+  width: 370px;
+  height:45px;
+  border-radius: 10px;
+  width: calc(50% - 10px);
+  color: gray;
+}
+
+.newProperties .list-new-property .list-property-form  input[type=text] {
+  height: auto;
+  padding: 10px;
+  width: calc(100% - 10px);
+  color: gray;
+  border: 0.001px solid gray;
+  border-radius: 10px;
+}
+
+.newProperties .list-new-property .list-property-form  input[type=checkbox] {
+  height: auto;
+  padding: 100px;
+  border: 1px solid black;
+
+}
+
+.newProperties .list-new-property .list-property-form .btnCenter {
+  margin:auto;
+  width:0%;
+  margin-top: 10px;
+}
+
+.newProperties .list-new-property .list-property-form .submitBtn {
+  font-size: 18px;
+  padding: 0 20px;
+  background: #68A4C4;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 20px;
+  width: 200px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.newProperties .list-new-property .list-property-form .submitBtn:hover{background-color: #2B547E;}
 
 
 
@@ -1953,6 +2316,7 @@ label {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+  margin-top: 150px;
   background: #0b212d;
   padding: 0 0 30px 0;
   color: #fff;
